@@ -1,2 +1,2 @@
 # Solana-Counter-Program
-Solana counter program WITH custom program entrypoint.
+Solana counter program with CUSTOM program entrypoint.
