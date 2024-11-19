@@ -36,7 +36,7 @@ pub unsafe extern "C" fn entrypoint(input_buffer: *mut u8) -> u64 {
     // executable flag
     offset += size_of::<u8>();
 
-    // 4 Bytes Padding
+    // 4 Bytes Padding (original data length)
     offset += size_of::<u32>();
 
     // counter account pubkey
