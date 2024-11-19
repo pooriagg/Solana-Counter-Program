@@ -52,7 +52,7 @@ pub unsafe extern "C" fn entrypoint(input_buffer: *mut u8) -> u64 {
     offset += size_of::<u64>();
 
     if counter_account_data_len != 8 {
-        sol_log("Counter account must have exactly size_of::<u64>().");
+        sol_log("Counter account must have exactly size_of::<u64>()");
         return 2;
     };
 
