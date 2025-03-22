@@ -99,7 +99,7 @@ pub unsafe extern "C" fn entrypoint(input_buffer: *mut u8) -> u64 {
     solana_program::program_memory::sol_memcpy(
         counter_account_data,
         counter.to_le_bytes().as_slice(),
-        8
+        size_of::<u64>()
     );
     sol_log("Counter incremented.");
  
