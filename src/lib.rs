@@ -85,6 +85,7 @@ pub unsafe extern "C" fn entrypoint(input_buffer: *mut u8) -> u64 {
         if let Ok(r) = counter_account_data.try_into() {
             r
         } else {
+            sol_log("Failed to get the counter value.");
             return 4;
         }
     );
